@@ -20,23 +20,23 @@ No frameworks. No backend. No database.
 
 ## Project Structure
 
-"""
+```
 cars-gallery/
 ├── index.html
 ├── css/
 ├── js/
 ├── assets/
 └── README.md
-"""
+```
 
 
 ## How to Run
 
 1. Clone the repository:
 
-"""
-git clone
-"""
+```
+git clone https://github.com/Farhan569/Cars_Gallery_Website/tree/main
+```
 
 2. Open `index.html` in a browser  
 or run a local server.
