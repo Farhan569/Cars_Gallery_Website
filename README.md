@@ -18,18 +18,6 @@ A static frontend website that displays a gallery of cars along with their basic
 
 No frameworks. No backend. No database.
 
-## Project Structure
-
-```
-cars-gallery/
-├── index.html
-├── css/
-├── js/
-├── assets/
-└── README.md
-```
-
-
 ## How to Run
 
 1. Clone the repository:
