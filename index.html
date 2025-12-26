@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery - Premium Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M20,50 L30,30 L70,30 L80,50 L70,70 L30,70 Z' fill='%23667eea'/%3E%3Ccircle cx='30' cy='75' r='7' fill='%23333'/%3E%3Ccircle cx='70' cy='75' r='7' fill='%23333'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-car"></i> Car Gallery</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#brands" class="nav-link">Brands</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="car-details.html" class="nav-link">Car Details</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Premium Cars</h1>
+            <p>Explore our collection of luxury and premium vehicles from top brands</p>
+            <a href="#gallery" class="cta-button">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Car Brands Section -->
+    <section id="brands" class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Car Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <i class="fas fa-car-side brand-icon"></i>
+                    <h3>BMW</h3>
+                    <p>German luxury vehicles known for performance</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-car-alt brand-icon"></i>
+                    <h3>Mercedes-Benz</h3>
+                    <p>Premium comfort and advanced technology</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-car-crash brand-icon"></i>
+                    <h3>Audi</h3>
+                    <p>Quattro performance and sleek design</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-truck-pickup brand-icon"></i>
+                    <h3>Toyota</h3>
+                    <p>Reliable and efficient vehicles</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-car brand-icon"></i>
+                    <h3>Honda</h3>
+                    <p>Quality and innovation in every model</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-caravan brand-icon"></i>
+                    <h3>Ford</h3>
+                    <p>American muscle and versatility</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-truck-monster brand-icon"></i>
+                    <h3>Lamborghini</h3>
+                    <p>Exotic supercars with incredible performance</p>
+                </div>
+                <div class="brand-card">
+                    <i class="fas fa-shuttle-space brand-icon"></i>
+                    <h3>Ferrari</h3>
+                    <p>Italian passion and racing heritage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Car Gallery</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="sedan">Sedan</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- BMW Models -->
+                <div class="gallery-item" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="BMW M5">
+                    <div class="gallery-overlay">
+                        <h3>BMW M5</h3>
+                        <p>Luxury Sedan</p>
+                        <a href="cars/bmw-m5.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="BMW M4">
+                    <div class="gallery-overlay">
+                        <h3>BMW M4</h3>
+                        <p>Sports Coupe</p>
+                        <a href="cars/bmw-m4.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Mercedes Models -->
+                <div class="gallery-item" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mercedes S-Class">
+                    <div class="gallery-overlay">
+                        <h3>Mercedes S-Class</h3>
+                        <p>Luxury Sedan</p>
+                        <a href="cars/mercedes-s-class.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="suv">
+                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mercedes GLE">
+                    <div class="gallery-overlay">
+                        <h3>Mercedes GLE</h3>
+                        <p>Luxury SUV</p>
+                        <a href="cars/mercedes-gle.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Audi Models -->
+                <div class="gallery-item" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Audi A8">
+                    <div class="gallery-overlay">
+                        <h3>Audi A8</h3>
+                        <p>Luxury Sedan</p>
+                        <a href="cars/audi-a8.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Audi R8">
+                    <div class="gallery-overlay">
+                        <h3>Audi R8</h3>
+                        <p>Sports Car</p>
+                        <a href="cars/audi-r8.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Toyota Models -->
+                <div class="gallery-item" data-category="sedan">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Toyota Camry">
+                    <div class="gallery-overlay">
+                        <h3>Toyota Camry</h3>
+                        <p>Reliable Sedan</p>
+                        <a href="cars/toyota-camry.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="suv">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Toyota Land Cruiser">
+                    <div class="gallery-overlay">
+                        <h3>Toyota Land Cruiser</h3>
+                        <p>Off-road SUV</p>
+                        <a href="cars/toyota-land-cruiser.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Honda Models -->
+                <div class="gallery-item" data-category="sedan">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Honda Accord">
+                    <div class="gallery-overlay">
+                        <h3>Honda Accord</h3>
+                        <p>Comfortable Sedan</p>
+                        <a href="cars/honda-accord.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Honda Civic Type R">
+                    <div class="gallery-overlay">
+                        <h3>Honda Civic Type R</h3>
+                        <p>Sports Hatchback</p>
+                        <a href="cars/honda-civic-type-r.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Ford Models -->
+                <div class="gallery-item" data-category="suv">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ford Explorer">
+                    <div class="gallery-overlay">
+                        <h3>Ford Explorer</h3>
+                        <p>Family SUV</p>
+                        <a href="cars/ford-explorer.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ford Mustang">
+                    <div class="gallery-overlay">
+                        <h3>Ford Mustang</h3>
+                        <p>American Muscle</p>
+                        <a href="cars/ford-mustang.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Lamborghini Models -->
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lamborghini Huracan">
+                    <div class="gallery-overlay">
+                        <h3>Lamborghini Huracan</h3>
+                        <p>Exotic Sports Car</p>
+                        <a href="cars/lamborghini-huracan.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Ferrari Models -->
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ferrari 488">
+                    <div class="gallery-overlay">
+                        <h3>Ferrari 488</h3>
+                        <p>Italian Supercar</p>
+                        <a href="cars/ferrari-488.html" class="details-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Our Collection</h2>
+            <p class="about-text">We showcase the finest collection of premium and luxury vehicles from the world's most prestigious car manufacturers. Our gallery features everything from daily drivers to exotic supercars, each representing the pinnacle of automotive engineering and design.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Car Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

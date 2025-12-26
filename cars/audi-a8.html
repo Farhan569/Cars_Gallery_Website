@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi A8 - Car Details</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M20,50 L30,30 L70,30 L80,50 L70,70 L30,70 Z' fill='%23667eea'/%3E%3Ccircle cx='30' cy='75' r='7' fill='%23333'/%3E%3Ccircle cx='70' cy='75' r='7' fill='%23333'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-car"></i> Car Gallery</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#brands" class="nav-link">Brands</a>
+                <a href="../index.html#gallery" class="nav-link">Gallery</a>
+                <a href="../car-details.html" class="nav-link">Car Details</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Car Detail Section -->
+    <section class="car-detail-section">
+        <div class="container">
+            <div class="car-detail-content">
+                <div class="car-detail-header">
+                    <h1>Audi A8</h1>
+                    <p>Luxury Sedan</p>
+                </div>
+
+                <div class="car-detail-body">
+                    <div class="car-detail-image">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Audi A8">
+                    </div>
+
+                    <div class="car-specs">
+                        <h3>Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <strong>Engine:</strong>
+                                <span>3.0L V6 Turbo (Base)</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Power:</strong>
+                                <span>335 HP</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>0-60 mph:</strong>
+                                <span>5.3 seconds</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Top Speed:</strong>
+                                <span>155 mph (limited)</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Transmission:</strong>
+                                <span>8-speed Automatic</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Price:</strong>
+                                <span>Starting at $87,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-description">
+                        <h3>About the Audi A8</h3>
+                        <p>The Audi A8 is the brand's flagship luxury sedan, featuring Quattro all-wheel drive, advanced lighting technology, and a sophisticated interior with premium materials and cutting-edge infotainment systems.</p>
+                        <p>With its minimalist interior design and advanced technology, the A8 offers a premium driving experience. The MMI touch response system, virtual cockpit, and premium sound system create a high-tech environment for both driver and passengers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Car Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Explorer - Car Details</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M20,50 L30,30 L70,30 L80,50 L70,70 L30,70 Z' fill='%23667eea'/%3E%3Ccircle cx='30' cy='75' r='7' fill='%23333'/%3E%3Ccircle cx='70' cy='75' r='7' fill='%23333'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-car"></i> Car Gallery</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#brands" class="nav-link">Brands</a>
+                <a href="index.html#gallery" class="nav-link">Gallery</a>
+                <a href="car-details.html" class="nav-link">Car Details</a>
+                <a href="index.html#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Car Detail Section -->
+    <section class="car-detail-section">
+        <div class="container">
+            <div class="car-detail-content">
+                <div class="car-detail-header">
+                    <h1>Ford Explorer</h1>
+                    <p>Family SUV</p>
+                </div>
+
+                <div class="car-detail-body">
+                    <div class="car-detail-image">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ford Explorer">
+                    </div>
+
+                    <div class="car-specs">
+                        <h3>Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <strong>Engine:</strong>
+                                <span>2.3L EcoBoost I4 (Base)</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Power:</strong>
+                                <span>300 HP</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>0-60 mph:</strong>
+                                <span>7.5 seconds</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Top Speed:</strong>
+                                <span>117 mph</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Transmission:</strong>
+                                <span>10-speed Automatic</span>
+                            </div>
+                            <div class="spec-item">
+                                <strong>Price:</strong>
+                                <span>Starting at $34,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-description">
+                        <h3>About the Ford Explorer</h3>
+                        <p>The Ford Explorer is a three-row SUV that offers a comfortable ride, spacious interior, and advanced technology. It's available in multiple trim levels to suit different needs and budgets.</p>
+                        <p>With its versatile seating for up to seven passengers and ample cargo space, the Explorer is ideal for families. The interior features premium materials and the latest Ford infotainment system with smartphone integration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Car Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
